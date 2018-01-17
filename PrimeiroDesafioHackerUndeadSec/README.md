@@ -90,7 +90,7 @@ $ curl https://suntzuwar.github.io -sS | head -10
     	var res = encodeURI(uri);
     	document.getElementById("demo").innerHTML = res;}
 ```
-Com estas informações podemos concluir que é necessário envar um e-mail para esta conta, ao enviar o e-mail recebemos uma resposta com um [link](https://goo.gl/Ek8Ehj) para o próximo passo:
+Com estas informações podemos concluir que é necessário enviar um e-mail para esta conta, ao enviar o e-mail recebemos uma resposta com um [link](https://goo.gl/Ek8Ehj) para o próximo passo:
 
 ![alt text][e-mail]
 
@@ -303,7 +303,7 @@ Parecia um arquivo criptografado acompanhado de uma chave para descriptografar, 
 (...)
 -----END RSA PRIVATE KEY-----
 ```
-Foi usado então o OpenSSL para converter o conteúdo do arquivo **encrypted.txt** para binário (o arquivo está encodado em base4):
+Foi usado então o OpenSSL para converter o conteúdo do arquivo **encrypted.txt** para binário (o arquivo está encodado em base64):
 ```
 $ base64 -d encrypted.txt > blob
 ```
